@@ -21,21 +21,7 @@ def print_info():
     print('5、查看所有学员信息')
     print('6、退出系统')
     print('*' * 20)
-    user_num = input('请输入选项')
-    if user_num == '1':
-        stu_add()
-    elif user_num == '2':
-        stu_del()
-    elif user_num == '3':
-        stu_seek()
-    elif user_num == '4':
-        stu_change()
-    elif user_num == '5':
-        stu_all()
-    elif user_num == '6':
-        stu_exit()
-    else:
-        print('输入错误，请重新输入')
+
 # 定义各个方法
 def stu_add():
     '''
@@ -113,4 +99,18 @@ def stu_exit():
 
 while flag:
     print_info()
-
+    user_num = input('请输入选项')
+    if user_num == '1':
+        stu_add()
+    elif user_num == '2':
+        stu_del()
+    elif user_num == '3':
+        stu_seek()
+    elif user_num == '4':
+        stu_change()
+    elif user_num == '5':
+        stu_all()
+    elif user_num == '6':
+        stu_exit()
+    else:
+        print('输入错误，请重新输入')

@@ -519,7 +519,7 @@ def 函数名(参数)：
       num1, num2 = tuple1
       ```
     
-  - 不定长关键字参数（**ps）
+  - 不定长关键字参数（**kwargs）
     
     - 收集所有关键字参数，返回一个字典
     
@@ -549,5 +549,80 @@ def 函数名(参数)：
 
   
 
+## 三、函数加强
 
+- 学员管理系统
+
+- 递归
+
+  特点：函数内部自己调用自己、必须有出口
+
+  注意：sum（num），无法这样调用
+
+  ```python
+  def sum_numbers(num):
+      if num == 1:
+          return 1
+      return sum_numbers(num) + sum_numbers(num - 1)
+  
+  print(sum_numbers(5))
+  ```
+
+  
+
+- lambda表达式
+
+  如果一个函数只有一个返回值，且只有一句代码，可以用lambda简化
+
+  ```
+  lambda 参数列表： 表达式
+  ```
+
+  *参数可有可无，*
+
+  *lambda表达式能接收任何数量的参数，但只能返回一个表达式的值*
+
+  - 无参数
+
+    ```python
+    fn1 = lambda: 100
+    ```
+
+    
+
+  - 一个参数
+
+    ```python
+    fn1 = lambda a: a
+    ```
+
+    
+
+  - 默认参数
+
+    ```
+    fn1 = lambda a, b, c=100: a + b + c
+    ```
+
+    
+
+  - 可变参数
+
+    ```
+    fn1 = lanbda *args: args
+    ```
+
+    
+
+  - 可变参数
+
+    ```
+    fn1 = lambda **kwargs: kwargs
+    ```
+
+    
+
+- 高阶函数
+
+- 
 
