@@ -1,0 +1,16 @@
+helloworld
+try:
+    print(num)
+except(NameError, ZeroDivisionError):
+    print('有指定性错误')
+except(NameError, ZeroDivisionError) as result:
+    print(result)
+except Exception as result:
+    print('不知道什么错误反正有错误')
+    print(f'错误内容{result}')
+except:
+    print('不知道什么错误反正有错误')
+else:
+    print('没有错误')
+finally:
+    print('不管有没有错误，我都得执行啊')
