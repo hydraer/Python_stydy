@@ -8,7 +8,7 @@ import socket
 
 if __name__ == '__main__':
     tcp_client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    tcp_client_socket.connect(('192.168.1.37', 8080))
+    tcp_client_socket.connect(('192.168.1.37', 8989))
     send_data = '你好服务器，我是老黑'.encode('gbk')
     tcp_client_socket.send(send_data)
     rec_data = tcp_client_socket.recv(1024)
